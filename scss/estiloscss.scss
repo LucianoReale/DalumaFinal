@@ -1,0 +1,583 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+header {
+  background-color: rgb(255, 233, 205);
+  height: 200px;
+  width: 100%;
+  top: 0px;
+
+  .daluma {
+    padding-top: 1rem;
+    color: rgb(153, 99, 0);
+    font-family: 'Style Script', cursive;
+    font-size: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+
+main {
+  background-color: rgb(255, 244, 228);
+  height: auto;
+  width: 100%;
+
+  .shadow-lg {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(129, 90, 64);
+    font-family: monospace;
+  }
+
+  .cajaUno {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      's1'
+      's2'
+      's3'
+      's4';
+    justify-items: center;
+    align-items: center;
+    padding-top: 5%;
+  }
+
+  .cajaDosI {
+    background-image: url(../Imagenes/indumentaria11.jfif);
+    height: 800px;
+    width: 720px;
+    text-align: center;
+    padding-top: 2.5rem;
+    background-size: cover;
+  }
+  .cajaDosA {
+    background-image: url(../Imagenes/lana5.jpg);
+    height: 700px;
+    width: 1200px;
+    text-align: center;
+    padding-top: 2.5rem;
+    background-size: cover;
+  }
+  .cajaDosL {
+    background-image: url(../Imagenes/lana.jpg);
+    height: 700px;
+    width: 1200px;
+    text-align: center;
+    padding-top: 2.5rem;
+    background-size: cover;
+  }
+  .cajaDosR {
+    background-image: url(../Imagenes/indumentaria/3lanaindumentaria.jpg);
+    height: 800px;
+    width: 720px;
+    text-align: center;
+    padding-top: 2.5rem;
+    background-size: cover;
+  }
+
+  .cajaCinco {
+    padding-top: 8rem;
+  }
+
+  .cajaTres {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    justify-content: start;
+    align-content: space-between;
+    padding: 50px 25px;
+  }
+  .seguinos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    color: chocolate;
+  }
+
+  ul.socialIcons {
+    padding: 0;
+    text-align: center;
+  }
+
+  .socialIcons li {
+    background-color: yellow;
+    list-style: none;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 2em;
+    overflow: hidden;
+  }
+
+  .socialIcons li a {
+    display: block;
+    padding: 0.3em;
+    height: 1.28571429em;
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: arial;
+    color: #fff;
+  }
+
+  .socialIcons li i {
+    margin-right: 0.5em;
+  }
+
+  .socialIcons li:hover a {
+    max-width: 200px;
+    padding-right: 1em;
+  }
+
+  .socialIcons .facebook {
+    background-color: #3b5998;
+    box-shadow: 0 0 16px #3b5998;
+    height: 30px;
+  }
+
+  .socialIcons .instagram {
+    background-color: #cd486b;
+    box-shadow: 0 0 16px #cd486b;
+    height: 30px;
+  }
+
+  .subtitulos {
+    text-decoration: none;
+    color: chocolate;
+    font-size: 25px;
+    position: relative;
+    color: white;
+    background-color: #000;
+    padding: 10px 5px;
+    opacity: 0.5;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 1rem;
+    font-size: 30px;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-name: aparecer;
+    animation-name: aparecer;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 15rem;
+    padding-left: 15rem;
+  }
+
+  section {
+    padding: 60px 0px;
+    overflow: hidden;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 7px 10px;
+    position: relative;
+    border-radius: 4px;
+    width: auto;
+    .section-header {
+      text-align: center;
+      padding-bottom: 40px;
+      height: auto;
+    }
+    .swiper-wrapper {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      transition-property: transform;
+      box-sizing: content-box;
+    }
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      bottom: 10px;
+      left: 0px;
+      width: 100%;
+    }
+    .section-header {
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    .clients-slider .swiper-slide img {
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+
+    .clients-slider .swiper-slide img:hover {
+      opacity: 1;
+    }
+
+    .clients-slider .swiper-pagination {
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .clients-slider .swiper-pagination .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      opacity: 1;
+      border: 1px solid #4154f1;
+    }
+    .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
+      background-color: #4154f1;
+    }
+
+    @media (max-width: 768px) {
+      .section-header p {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+  }
+  .metodosdepago {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    img {
+      width: 60px;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+  background-color: rgb(255, 233, 205);
+  .pieDePagina {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    background-color: rgb(187, 141, 80);
+    list-style: none;
+    display: flex;
+    line-height: 3;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    color: rgb(65, 65, 65);
+  }
+
+  .footer-newsletter form {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: rgb(255, 233, 205);
+    padding: 7px 10px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid hsla(51, 36%, 15%, 0.329);
+  }
+  .footer-newsletter form input[type='email'] {
+    border: 0;
+    padding: 8px;
+    width: fit-content;
+  }
+  .footer-newsletter form input[type='submit'] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 30px;
+    margin: 3px;
+    background-color: rgb(187, 141, 80);
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    border-radius: 4px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Indumentaria
+--------------------------------------------------------------*/
+
+.imagenesIndumentariaAccesoriosLoMasNuevoRebajas {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr ;
+  text-align: center;
+  
+}
+.indumentariaTodo {
+  display: flex;
+  color: chocolate;
+  
+  font-family: monospace;
+  font-size: 30px;
+  line-height: 1.4;
+  justify-content: flex-start;
+  text-align: left;
+  
+}
+.ulIndumentaria {
+  list-style-type: none;
+}
+
+.card {
+  
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-direction: row;
+
+  .card-img-top{
+    height: 50%;
+  }
+  .card-title{
+    font-size: 30px;
+  }
+  .btn-primary{
+    background-color: #000;
+    border-color: #000;
+  }
+  .card-text{
+    padding-bottom: 3.5rem;
+  }
+
+    
+    
+  
+}
+
+
+.productoUno {
+  height: 100%;
+  width: 100%;
+}
+
+div {
+  ul {
+    p {
+      color: chocolate;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Contacto
+--------------------------------------------------------------*/
+
+.alturaMain {
+  height: auto;
+}
+
+.noModificar {
+  width: 5%;
+  height: 3%;
+}
+
+/*--------------------------------------------------------------
+# Rebajas
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+
+
+@media only screen and (max-width: 1280px){
+  header {
+    background-color: rgb(255, 233, 205);
+    height: auto;
+    .daluma {
+      padding-top: 2rem;
+      font-size: 70px;
+    }
+  }
+
+  main {
+    .imagenesIndumentariaAccesoriosLoMasNuevoRebajas {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      display: grid;
+      height: 30%;
+      width: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      text-align: center;
+      
+      justify-items: center;
+
+    }
+    .card {
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+      .card-title{
+        font-size: 30px;
+      }
+      .btn-primary{
+        background-color: #000;
+        border-color: #000;
+      }
+      .card-text{
+        padding-bottom: 3.5rem;
+      }
+    }
+    .subtitulos {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-right: 6rem;
+      padding-left: 6rem;
+    }
+    .cajaUno {
+      display: flex;
+      width: auto;
+      flex-direction: column;
+    }
+    .cajaDosI {
+      height: 800px;
+      text-align: center;
+      width: auto;
+      padding-top: 2.5rem;
+      
+    }
+    .cajaDosA {
+      height: 800px;
+      text-align: center;
+      width: auto;
+      padding-top: 2.5rem;
+      background-image: url(../Imagenes/6lanaaccesorioa.jpg);
+      
+    }
+    .cajaDosL {
+      height: 800px;
+      text-align: center;
+      width: auto;
+      padding-top: 2.5rem;
+      background-image: url(../Imagenes/lana5a.jpg);
+    }
+
+    .cajaDosR {
+      height: 800px;
+      text-align: center;
+      width: auto;
+      padding-top: 2.5rem;
+    }
+  }
+
+  footer {
+    .pieDePagina {
+      flex-direction: column;
+      text-align: center;
+      padding-left: 0;
+      font-family: 'Signika Negative', sans-serif;
+      font-size: 20px;
+      background-color: rgb(187, 141, 80);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    background-color: rgb(255, 233, 205);
+    height: auto;
+    .daluma {
+      padding-top: 2rem;
+      font-size: 40px;
+    }
+  }
+  main {
+    .imagenesIndumentariaAccesoriosLoMasNuevoRebajas {
+      display: flex;
+      flex-direction: column;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      align-items: center;
+    }
+    .card {
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+      .card-img-top{
+        height: auto;
+        .card-title{
+          font-size: 30px;
+        }
+        .btn-primary{
+          background-color: #000;
+          border-color: #000;
+        }
+        .card-text{
+          padding-bottom: 3.5rem;
+        }
+        
+      }
+    }
+    .subtitulos {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-right: 6rem;
+      padding-left: 6rem;
+    }
+    .cajaUno {
+      display: flex;
+      width: auto;
+      flex-direction: column;
+    }
+    .cajaDosI {
+      height: 800px;
+      text-align: center;
+      width: auto;
+      padding-top: 2.5rem;
+      
+    }
+    .cajaDosA {
+      height: 800px;
+      text-align: center;
+      width: auto;
+      padding-top: 2.5rem;
+      background-image: url(../Imagenes/6lanaaccesorioa.jpg);
+      
+    }
+    .cajaDosL {
+      height: 800px;
+      text-align: center;
+      width: auto;
+      padding-top: 2.5rem;
+      background-image: url(../Imagenes/lana5a.jpg);
+    }
+
+    .cajaDosR {
+      height: 800px;
+      text-align: center;
+      width: auto;
+      padding-top: 2.5rem;
+    }
+  }
+
+  footer {
+    .pieDePagina {
+      flex-direction: column;
+      text-align: center;
+      padding-left: 0;
+      font-family: 'Signika Negative', sans-serif;
+      font-size: 20px;
+      background-color: rgb(187, 141, 80);
+    }
+  }
+}
